@@ -26,11 +26,11 @@ public class Main {
             Object machine = constructor.newInstance(keyboard, monitor);
             machineClass.getMethod("work").invoke(machine);
 
-            System.out.println("\n✅ [Success] Windows98Machine now correctly depends on abstractions (Interfaces)!");
+            System.out.println("\n[Success] Windows98Machine now correctly depends on abstractions (Interfaces)!");
 
         } catch (NoSuchMethodException e) {
             // Fallback for Skeleton state (Before Refactoring)
-            System.out.println("⚠️ [Warning] Windows98Machine is tightly coupled to specific implementations.");
+            System.out.println("[Warning] Windows98Machine is tightly coupled to specific implementations.");
             System.out.println("Please create interfaces and inject them via the constructor!\n");
             
             System.out.println("--- Current Output ---");
@@ -38,7 +38,7 @@ public class Main {
             oldMachine.work();
 
         } catch (Exception e) {
-            System.out.println("\n❌ [Error] Refactoring is incomplete or incorrect: " + e.getMessage());
+            System.out.println("\n[Error] Refactoring is incomplete or incorrect: " + e.getMessage());
         }
     }
 }
