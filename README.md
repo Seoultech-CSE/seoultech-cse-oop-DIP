@@ -1,3 +1,5 @@
+### Exercise 2: Dependency Inversion Principle (DIP)
+
 #### 📖 Background
 The Dependency Inversion Principle (DIP) states that high-level modules should not depend on low-level modules. Both should depend on abstractions (interfaces). By decoupling classes, we can easily switch out dependencies without rewriting the high-level class.
 
